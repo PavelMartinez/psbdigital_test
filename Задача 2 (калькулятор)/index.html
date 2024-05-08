@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/calculator.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="backspace()">⌫</button>
+            <button onclick="inputValue('(')">(</button>
+            <button onclick="inputValue(')')">)</button>
+            <button onclick="inputValue('/')">÷</button>
+            <button onclick="inputValue('7')">7</button>
+            <button onclick="inputValue('8')">8</button>
+            <button onclick="inputValue('9')">9</button>
+            <button onclick="inputValue('*')">×</button>
+            <button onclick="inputValue('4')">4</button>
+            <button onclick="inputValue('5')">5</button>
+            <button onclick="inputValue('6')">6</button>
+            <button onclick="inputValue('-')">-</button>
+            <button onclick="inputValue('1')">1</button>
+            <button onclick="inputValue('2')">2</button>
+            <button onclick="inputValue('3')">3</button>
+            <button onclick="inputValue('+')">+</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="inputValue('0')">0</button>
+            <button onclick="inputValue('.')">.</button>
+            <button onclick="copyToClipboard()">Копировать</button>
+        </div>
+        <div class="description">
+            <span>Допускается использовать клавиатурный ввод</span>
+            <span>Нажмите c (eng) для очистки поля ввода</span>
+            <span>Нажмите Enter или = для подсчёта</span>
+        </div>
+    </div>
+</body>
+</html>
